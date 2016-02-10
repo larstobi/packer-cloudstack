@@ -1,10 +1,11 @@
 package cloudstack
 
 import (
-	"code.google.com/p/go.crypto/ssh"
 	"fmt"
+
 	"github.com/mitchellh/multistep"
 	packerssh "github.com/mitchellh/packer/communicator/ssh"
+	"golang.org/x/crypto/ssh"
 )
 
 func sshAddress(state multistep.StateBag) (string, error) {
